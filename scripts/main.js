@@ -4,7 +4,15 @@ function controllScroll() {
 }
 
 function controllNavMenu() {
-
+    if (window.scrollY >= 600) {
+        $(".menu-item").addClass("move-items");
+        $(".scrolled-menu").css('opacity', '1');
+        $(".underline").css('width', '0');
+    } else {
+        $(".menu-item").removeClass("move-items");
+        $(".scrolled-menu").css('opacity', '0');
+        $(".underline").css('width', '75%');
+    }
 }
 
 function controllScrollHint() {
