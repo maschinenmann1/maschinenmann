@@ -2,83 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maschinenmann</title>
-    <link rel="stylesheet" href="styles/main.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maschinenmann - Website</title>
+	<link rel="icon" type="image/x-icon" href="assets/images/kronii.png">
+	<link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body>
-    <div id="body">
+<body onscroll="controllScroll()">
+	<nav class="navigator">
+		<div class="container">
+			<div class="wrapper wrapper-flex">
+				<div class="menu-item">
+					<span>PROJECTS</span>
+				</div>
+				<div class="menu-item">
+					<span>MASCHINENMANN</span>
+				</div>
+				<div class="menu-item">
+					<span>CONTACT</span>
+				</div>
+			</div>
+		</div>
+		<span class="underline" style="opacity:60%;"></span>
+	</nav>
 
-        <header id="title">
-            <h1>My portFolio</h1>
-        </header>
+	<header>
+		<!-- <h1>MASCHINENMANN</h1> -->
+	</header>
 
-        <nav>
-            <menu>
-			<li><a href="#title">Title</a></li>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#aboutme">About me</a></li>
-                <li><a href="#works">Works</a></li>
-            </menu>
-        </nav>
+	<div class="content">
 
-        <main>
-			<section id="inicio" class="seccion">
-				<h2>Title 1</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.</p>
-			</section>
-			
-			<section id="aboutme" class="seccion">
-				<h2>Title 2</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.</p>
-			</section>
-			
-			<section id="works" class="seccion">
-				<h2>Title 3</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio
-					velit accusantium nihil pariatur minus corporis, quasi voluptatum expedita
-					illum earum nostrum, quo cum sapiente similique sit nobis, ea magni.</p>
-			</section>
-			
-        </main>
+	</div>
 
-        <footer>
-            <p>created by: <a href="#">David Herce</a></p>
-        </footer>
-    </div>
+	<span class="scroll-hint">
+		<span class="animated-scroll-hint"></span>
+	</span>
+
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<script src="scripts/main.js"></script>
 </body>
 
 </html>
