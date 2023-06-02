@@ -16,10 +16,10 @@ function controllNavMenu() {
 }
 
 function controllScrollHint() {
-    if (window.scrollY <= 0) {
-        $.wait(function () { $(".scroll-hint").fadeIn("slow"); }, 2);
-    } else {
-        $.wait(function () { $(".scroll-hint").fadeOut("slow"); }, 2);
+    if (window.scrollY >= 500) {
+        $.wait(function () { $(".scroll-hint").fadeOut("slow"); }, .5);
+    } else if (window.scrollY <= 100) {
+        $.wait(function () { $(".scroll-hint").fadeIn("slow"); }, .2);
     }
 }
 
