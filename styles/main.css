@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
 }
 
 .move-items {
-    transform: translate(0px, -22.5px);
+    transform: translate(0px, -20px);
 }
 
 .menu-item:hover {
@@ -100,7 +100,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/assets/images/viktor.jpg");
+    background-image: url("../assets/images/viktor.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
