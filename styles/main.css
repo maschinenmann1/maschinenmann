@@ -160,7 +160,7 @@ header h1 {
     height: 2000px;
 }
 
-.content h1 {
+.content h1, .content h2 {
     text-align: center;
     margin-top: 40px;
 }
@@ -175,6 +175,10 @@ header h1 {
 
 #about-me article {
     width: 695.64px;
+}
+
+.content img{
+    border-radius: 15px;
 }
 
 /* 

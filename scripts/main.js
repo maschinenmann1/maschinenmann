@@ -32,4 +32,3 @@ $(window).on('beforeunload', function () {
 $.wait = function (callback, seconds) {
     return window.setTimeout(callback, seconds * 1000);
 }
-
