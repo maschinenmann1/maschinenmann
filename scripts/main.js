@@ -23,23 +23,12 @@ function controllScrollHint() {
     }
 }
 
-function headerNavigation(section){
-    let url;
-    switch(section){
-        case 'main':
-            url = "/maschinenmann";
-            break;
-        case 'contact':
-            url = "/maschinenmann/contact";
-            break;
-        case 'projects':
-            url = "/maschinenmann/projects";
-            break;
-        default:
-            return;
-    }
-    window.location.href = url;
-}
+$(function () {
+    $("body").mousewheel(function (event, delta) {
+        this.scrollLeft -= (delta * 60);
+        event.preventDefault();
+    });
+});
 
 // SCROLL TOP ON PAGE LOAD
 $(window).on('beforeunload', function () {
