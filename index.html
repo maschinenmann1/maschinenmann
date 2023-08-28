@@ -18,13 +18,13 @@
 			<div class="wrapper wrapper-flex">
 				<div class="scrolled-menu"></div>
 				<div class="menu-item">
-					<span>PROJECTS</span>
+					<span onclick="headerNavigation('projects')">PROJECTS</span>
 				</div>
 				<div class="menu-item">
-					<span class="menu-logo">MASCHINENMANN</span>
+					<span class="menu-logo" onclick="headerNavigation('main')">MASCHINENMANN</span>
 				</div>
 				<div class="menu-item">
-					<span>CONTACT</span>
+					<span onclick="headerNavigation('contact')">CONTACT</span>
 				</div>
 			</div>
 		</div>
@@ -81,21 +81,23 @@
 							ducimus. Cumque accusantium aliquam culpa eos.</p>
 					</section>
 				</article>
-				<aside>
-					<img src="./assets/images/pfp.jpg" alt="pfp" height="700px">
+				<aside class="frame">
+					<div class="form">
+						<img src="./assets/images/pfp.jpg" alt="pfp" height="700px">
+					</div>
 				</aside>
 			</div>
 		</div>
 		<div>
 			<h2>Work Experience</h2>
 			<div id="work-experience">
-				
+
 			</div>
 		</div>
 		<div>
 			<h2>Studies</h2>
 			<div id="studies">
-				
+
 			</div>
 		</div>
 	</div>
@@ -111,6 +113,9 @@
 	<!-- SCRIPT SECTION -->
 	<script src="https://code.jquery.com/jquery-3.7.0.js"
 		integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+		integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="./scripts/main.js"></script>
 </body>
 
