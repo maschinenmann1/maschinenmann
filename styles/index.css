@@ -1,0 +1,90 @@
+/* 
+ * CONTENT OF THE WEB
+*/
+
+.content h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content h2 {
+    font-weight: lighter;
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: .1rem;
+}
+
+.content p {
+    font-weight: lighter;
+    letter-spacing: .1rem;
+}
+
+h5 {
+    margin: 2px;
+    font-weight: lighter;
+    letter-spacing: .2rem;
+}
+
+.article-container {
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#about-me article {
+    width: 695.64px;
+}
+
+.button {
+    background-color: #243954;
+    padding: 10px;
+    transition: background-color .5s;
+    width: max-content;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #192C43;
+}
+
+.button a {
+    font-size: 1.3rem;
+    color: #fff;
+    width: max-content;
+}
+
+
+#web-projects h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#web-projects article {
+    width: 1509px;
+}
+
+#web-projects .button {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-list .frame::before {
+    transform: translate(5px, 5px);
+}
+
+.project-list figcaption {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.5rem
+}

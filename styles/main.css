@@ -13,6 +13,16 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* 
  * MENU OF THE WEB
 */
@@ -68,6 +78,10 @@ body::-webkit-scrollbar {
     letter-spacing: .1em;
 }
 
+.menu-item a {
+    color: #fff;
+}
+
 .move-items {
     transform: translate(0px, -20px);
 }
@@ -100,7 +114,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../assets/images/viktor.jpg");
+    background-image: url("../assets/images/background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,31 +171,13 @@ header h1 {
     z-index: 2;
     display: block;
     margin: auto;
-    height: 2000px;
 }
 
-.content h1,
-.content h2 {
-    text-align: center;
-    margin-top: 40px;
-}
-
-#about-me {
-    margin: 40px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#about-me article {
-    width: 695.64px;
-}
 
 .frame {
     position: relative;
-    height: min-content;
-    width: min-content;
+    height: max-content;
+    width: max-content;
     margin: 0;
     padding: 0;
     z-index: -1;
@@ -200,12 +196,12 @@ header h1 {
 
 }
 
-.form {
+.shape {
     position: relative;
     z-index: -1;
 }
 
-.form::after {
+.shape::after {
     content: "";
     position: absolute;
     top: 0px;
@@ -224,17 +220,54 @@ header h1 {
 
 footer {
     width: 100%;
-    height: 50px;
     background-color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: default;
 }
 
-footer p {
-    width: 100%;
-    text-align: center;
+footer a {
     color: black;
+}
+
+footer>div {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#footer-links {
+    padding-top: 80px;
+}
+
+#footer-links>div {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media div {
+    padding-top: 10px;
+}
+
+.social-media span {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #999999;
+    cursor: pointer;
+}
+
+#copyright {
+    margin-top: 80px;
+    border-style: dotted;
+    border-color: black;
+    color: black;
+    border-width: 1px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
+}
+
+#copyright p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5em;
     margin: 0;
     padding: 0;
 }
