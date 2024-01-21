@@ -80,7 +80,16 @@ h5 {
 }
 
 .project-list .frame::before {
-    transform: translate(5px, 5px);
+    transform: translate(7px, 7px);
+}
+
+.project-list figure {
+    cursor: pointer;
+}
+
+.project-list .frame {
+    width: 350px;
+    height: 350px;
 }
 
 .project-list figcaption {
