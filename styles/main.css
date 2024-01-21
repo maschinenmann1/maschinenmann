@@ -197,6 +197,7 @@ header h1 {
 }
 
 .shape {
+    cursor: pointer;
     position: relative;
     z-index: -1;
 }

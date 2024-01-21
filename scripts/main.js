@@ -1,3 +1,6 @@
+let isScrollHintVisible = true;
+
+// SCROLL METHODS
 function controllScroll() {
     controllScrollHint();
     controllNavMenu();
@@ -16,10 +19,11 @@ function controllNavMenu() {
 }
 
 function controllScrollHint() {
-    if (window.scrollY >= 500) {
-        $.wait(function () { $(".scroll-hint").fadeOut("slow"); }, .5);
-    } else if (window.scrollY <= 100) {
-        $.wait(function () { $(".scroll-hint").fadeIn("slow"); }, .2);
+    console.log($("#pdf").scrollY)
+    if (window.scrollY >= 100 && isScrollHintVisible === true) {
+        $.wait(function () { $(".scroll-hint").fadeOut("slow"); isScrollHintVisible = false }, .5);
+    } else if (window.scrollY < 100 && isScrollHintVisible === false) {
+        $.wait(function () { $(".scroll-hint").fadeIn("slow"); isScrollHintVisible = true }, .2);
     }
 }
 
@@ -35,7 +39,16 @@ $(window).on('beforeunload', function () {
     $(window).scrollTop(0);
 });
 
-// WAIT METHOD
+// NAVIGATION METHODS
+function navigateTo(url) {
+    window.location.href = url;
+}
+
+function openTab(url) {
+    window.open(url, "_blank");
+}
+
+// WAIT METHODS
 $.wait = function (callback, seconds) {
     return window.setTimeout(callback, seconds * 1000);
 }
