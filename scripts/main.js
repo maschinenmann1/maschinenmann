@@ -4,6 +4,7 @@ let isScrollHintVisible = true;
 function controllScroll() {
     controllScrollHint();
     controllNavMenu();
+    animationsAtSpecificScroll();
 }
 
 function controllNavMenu() {
@@ -24,6 +25,18 @@ function controllScrollHint() {
         $.wait(function () { $(".scroll-hint").fadeOut("slow"); isScrollHintVisible = false }, .5);
     } else if (window.scrollY < 100 && isScrollHintVisible === false) {
         $.wait(function () { $(".scroll-hint").fadeIn("slow"); isScrollHintVisible = true }, .2);
+    }
+}
+
+function animationsAtSpecificScroll() {
+    console.log(window.scrollY);
+    if (window.scrollY >= 350) {
+        //$("#about-me h2").addClass('preorderTitleAnimation');
+        $("#about-me h2 span").addClass('span-run');
+    }
+    if (window.scrollY >= 450) {
+        $("#about-me h5").addClass('fadeInAnimation');
+        $("#about-me section").addClass('fadeInAnimation');
     }
 }
 

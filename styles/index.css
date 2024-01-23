@@ -7,16 +7,164 @@
     margin-top: 40px;
 }
 
-.content h2 {
+
+
+#about-me p {
+    font-weight: lighter;
+    letter-spacing: .1rem;
+}
+
+#about-me h2 {
     font-weight: lighter;
     font-size: 4rem;
     margin: 0;
     letter-spacing: .1rem;
+    /*transform: translateY(100px) scale(0.7);*/
 }
 
-.content p {
-    font-weight: lighter;
-    letter-spacing: .1rem;
+#about-me h2 span {
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+}
+
+.span-run:nth-child(1) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(1 * 40ms);
+}
+
+.span-run:nth-child(2) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(2 * 40ms);
+}
+
+.span-run:nth-child(3) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(3 * 40ms);
+}
+
+.span-run:nth-child(4) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(4 * 40ms);
+}
+
+.span-run:nth-child(5) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(5 * 40ms);
+}
+
+.span-run:nth-child(6) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(6 * 40ms);
+}
+
+.span-run:nth-child(7) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(7 * 40ms);
+}
+
+.span-run:nth-child(8) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(8 * 40ms);
+}
+
+.span-run:nth-child(9) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(9 * 40ms);
+}
+
+.span-run:nth-child(10) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(10 * 40ms);
+}
+
+.span-run:nth-child(11) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(11 * 40ms);
+}
+
+.span-run:nth-child(12) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(12 * 40ms);
+}
+
+.span-run:nth-child(13) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(13 * 40ms);
+}
+
+.preorderTitleAnimation {
+    -webkit-animation: preorderTitleAnim 1.5s ease-in-out both;
+    animation: preorderTitleAnim 1.5s ease-in-out both;
+}
+
+@keyframes preorderTitleAnim {
+    0% {
+        transform: translateY(100px) scale(0.7);
+    }
+
+    45% {
+        transform: translateY(100px) scale(0.7);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.fadeInAnimation {
+    -webkit-animation: fadeInAnim 1s ease both;
+    animation: fadeInAnim 1s ease both;
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 h5 {
@@ -85,6 +233,11 @@ h5 {
 
 .project-list figure {
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-list figure:hover {
+    transform: scale(1.01);
 }
 
 .project-list .frame {

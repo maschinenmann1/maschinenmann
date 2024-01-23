@@ -215,6 +215,14 @@ header h1 {
     background-color: #222222;
 }
 
+.d-none {
+    display: none;
+}
+
+.hide {
+    opacity: 0;
+}
+
 /* 
  * FOOTER OF THE WEB
 */
