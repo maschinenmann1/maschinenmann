@@ -116,7 +116,7 @@ header {
     justify-content: center;
     background-image: url("../assets/images/background.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
