@@ -103,9 +103,9 @@ a {
     transform: translate(0px, -93.5966%);
     background-color: rgba(21, 21, 21, 0.3);
     opacity: 0;
-    z-index: -1;
     backdrop-filter: blur(20px);
     transition: opacity .5s;
+    will-change: transform;
 }
 
 header {

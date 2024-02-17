@@ -189,6 +189,7 @@ h5 {
 
 #about-me article {
     width: 695.64px;
+    z-index: -1;
 }
 
 .button {
@@ -221,6 +222,7 @@ h5 {
 
 #web-projects .button {
     margin-top: 40px;
+    margin-bottom: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -287,29 +289,43 @@ h5 {
     }
 
     .frame {
+        margin-top: 60px;
         width: 350px;
         height: 350px;
     }
 
+    .article-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
     #about-me article {
-        width: 400px;
+        width: 100%;
     }
 
     #about-me p {
-        font-weight: lighter;
         letter-spacing: .1rem;
     }
 
     h2 {
-        font-weight: lighter;
-        font-size: 3rem;
-        margin: 0;
-        letter-spacing: .1rem;
-        /*transform: translateY(100px) scale(0.7);*/
+        font-size: 2.5rem;
     }
+
+    h5 {
+        font-size: .7rem;
+    }
+
+    #web-projects article {
+        width: 100%;
+    }
+
 
     .project-list figure {
         margin: 15px;
+    }
+
+    .project-list figure:hover {
+        transform: scale(1);
     }
 
 }
