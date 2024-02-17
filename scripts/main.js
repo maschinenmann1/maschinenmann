@@ -20,7 +20,6 @@ function controllNavMenu() {
 }
 
 function controllScrollHint() {
-    console.log($("#pdf").scrollY)
     if (window.scrollY >= 100 && isScrollHintVisible === true) {
         $.wait(function () { $(".scroll-hint").fadeOut("slow"); isScrollHintVisible = false }, .5);
     } else if (window.scrollY < 100 && isScrollHintVisible === false) {
@@ -29,7 +28,6 @@ function controllScrollHint() {
 }
 
 function animationsAtSpecificScroll() {
-    console.log(window.scrollY);
     if (window.scrollY >= 350) {
         //$("#about-me h2").addClass('preorderTitleAnimation');
         $("#about-me h2 span").addClass('span-run');
@@ -40,12 +38,16 @@ function animationsAtSpecificScroll() {
     }
 }
 
+/*
+
 $(function () {
     $("body").mousewheel(function (event, delta) {
         this.scrollLeft -= (delta * 60);
         event.preventDefault();
     });
 });
+
+*/
 
 // SCROLL TOP ON PAGE LOAD
 $(window).on('beforeunload', function () {
