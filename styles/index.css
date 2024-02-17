@@ -120,22 +120,6 @@ h2 {
     transition-delay: calc(11 * 40ms);
 }
 
-.span-run:nth-child(12) {
-    opacity: 1 !important;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition-delay: calc(1 * 40ms);
-    transition-delay: calc(12 * 40ms);
-}
-
-.span-run:nth-child(13) {
-    opacity: 1 !important;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition-delay: calc(1 * 40ms);
-    transition-delay: calc(13 * 40ms);
-}
-
 .preorderTitleAnimation {
     -webkit-animation: preorderTitleAnim 1.5s ease-in-out both;
     animation: preorderTitleAnim 1.5s ease-in-out both;
