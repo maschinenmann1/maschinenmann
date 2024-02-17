@@ -288,7 +288,7 @@ h5 {
         margin-bottom: 50px;
     }
 
-    .frame {
+    #about-me .frame {
         margin-top: 60px;
         width: 350px;
         height: 350px;
@@ -315,6 +315,11 @@ h5 {
         font-size: .7rem;
     }
 
+    #about-me .button {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
     #web-projects article {
         width: 100%;
     }
@@ -332,7 +337,7 @@ h5 {
 
 @media only screen and (max-device-width: 400px) {
     #profile-picture {
-        height: 330px;
+        height: 350px;
     }
 
     .frame {
