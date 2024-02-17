@@ -280,3 +280,25 @@ footer>div {
     margin: 0;
     padding: 0;
 }
+
+@media only screen and (max-device-width: 930px) {
+    header {
+        background-image: url("../assets/images/background_ipad.jpg");
+    }
+}
+
+@media only screen and (max-device-width: 530px) {
+    .menu-item a {
+        font-size: .9rem;
+    }
+
+    header {
+        background-image: url("../assets/images/background_phone.jpg");
+    }
+}
+
+@media only screen and (max-device-width: 430px) {
+    .menu-item a {
+        font-size: .7rem;
+    }
+}

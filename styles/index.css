@@ -14,7 +14,11 @@
     letter-spacing: .1rem;
 }
 
-#about-me h2 {
+#about-me aside {
+    margin-bottom: 30px;
+}
+
+h2 {
     font-weight: lighter;
     font-size: 4rem;
     margin: 0;
@@ -177,6 +181,7 @@ h5 {
     margin: 40px;
     padding: 40px;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -224,6 +229,7 @@ h5 {
 
 .project-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -249,4 +255,72 @@ h5 {
     text-align: center;
     margin-top: 15px;
     font-size: 1.5rem
+}
+
+#profile-picture {
+    height: 500px;
+}
+
+@media only screen and (max-device-width: 600px) {
+    #profile-picture {
+        height: 400px;
+    }
+
+    .frame {
+        width: 400px;
+        height: 400px;
+    }
+
+    .project-list figure {
+        margin: 20px;
+    }
+
+}
+
+@media only screen and (max-device-width: 530px) {
+    #profile-picture {
+        height: 350px;
+    }
+
+    #about-me aside {
+        margin-bottom: 50px;
+    }
+
+    .frame {
+        width: 350px;
+        height: 350px;
+    }
+
+    #about-me article {
+        width: 400px;
+    }
+
+    #about-me p {
+        font-weight: lighter;
+        letter-spacing: .1rem;
+    }
+
+    h2 {
+        font-weight: lighter;
+        font-size: 3rem;
+        margin: 0;
+        letter-spacing: .1rem;
+        /*transform: translateY(100px) scale(0.7);*/
+    }
+
+    .project-list figure {
+        margin: 15px;
+    }
+
+}
+
+@media only screen and (max-device-width: 400px) {
+    #profile-picture {
+        height: 330px;
+    }
+
+    .frame {
+        width: 330px;
+        height: 330px;
+    }
 }
