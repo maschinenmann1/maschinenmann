@@ -173,7 +173,7 @@ h5 {
 
 #about-me article {
     width: 695.64px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .button {
@@ -192,6 +192,7 @@ h5 {
     font-size: 1.3rem;
     color: #fff;
     width: max-content;
+    display: block;
 }
 
 
