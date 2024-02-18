@@ -1,3 +1,16 @@
 h1 {
     mix-blend-mode: difference;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 730px) {
+    h1 {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-device-width: 530px) {
+    h1 {
+        font-size: .8rem;
+    }
 }
