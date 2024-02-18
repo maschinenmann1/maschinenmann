@@ -5,12 +5,12 @@ h1 {
 
 @media only screen and (max-device-width: 730px) {
     h1 {
-        font-size: .9rem;
+        font-size: .7rem;
     }
 }
 
 @media only screen and (max-device-width: 530px) {
     h1 {
-        font-size: .8rem;
+        font-size: .5rem;
     }
 }
