@@ -259,15 +259,17 @@ footer>div {
     justify-content: space-between;
 }
 
-.social-media div {
-    padding-top: 10px;
+.social-media span {
+    padding: 5px;
+    cursor: pointer;
 }
 
-.social-media span {
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #999999;
-    cursor: pointer;
+.social-media span:first-of-type {
+    padding-left: 0px;
+}
+
+.social-media i{
+    font-size: 1.7rem;
 }
 
 #copyright {
