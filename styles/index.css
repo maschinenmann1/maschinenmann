@@ -12,6 +12,7 @@
 #about-me p {
     font-weight: lighter;
     letter-spacing: .1rem;
+    line-height: 1.3;
 }
 
 #about-me aside {
