@@ -5,6 +5,7 @@ function controllScroll() {
     controllScrollHint();
     controllNavMenu();
     animationsAtSpecificScroll();
+    testing();
 }
 
 function controllNavMenu() {
@@ -38,17 +39,6 @@ function animationsAtSpecificScroll() {
     }
 }
 
-/*
-
-$(function () {
-    $("body").mousewheel(function (event, delta) {
-        this.scrollLeft -= (delta * 60);
-        event.preventDefault();
-    });
-});
-
-*/
-
 // SCROLL TOP ON PAGE LOAD
 $(window).on('beforeunload', function () {
     $(window).scrollTop(0);
@@ -67,3 +57,12 @@ function openTab(url) {
 $.wait = function (callback, seconds) {
     return window.setTimeout(callback, seconds * 1000);
 }
+
+// SET BACKGROUND HEIGHT
+$(document).ready(function () {
+    $("header").css("height", screen.availHeight);
+});
+
+$(window).on("resize", function () {
+    $("header").css("height", screen.availHeight);
+});
