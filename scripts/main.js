@@ -66,3 +66,13 @@ $(document).ready(function () {
 $(window).on("resize", function () {
     $("header").css("height", screen.availHeight);
 });
+
+// SET FAVICON DEPENDING ON BROWSER THEME
+const setFavicon = () => {
+    const favicon = document.querySelector('link[rel="icon"]');
+    favicon.href = (window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ? './assets/images/icon_white.png'
+        : './assets/images/icon_black.png';
+};
+
+setFavicon();
