@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #222222;
+    background-color: #262626;
     font-family: "Riviera Nights", "Gill Alt One MT", Helvetica, Arial, -apple-system, sans-serif;
     color: #fff;
     letter-spacing: .03571em;
@@ -220,7 +220,7 @@ header h1 {
     padding-top: 11%;
     transform: translate(50%, -50%) rotate(45deg);
     z-index: 1;
-    background-color: #222222;
+    background-color: #262626;
 }
 
 .d-none {
