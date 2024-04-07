@@ -83,6 +83,10 @@ a {
     color: #fff;
 }
 
+.menu-logo img {
+    height: 55px;
+}
+
 .move-items {
     transform: translate(0px, -20px);
 }
